@@ -1,31 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-      }
-
-      model-viewer {
-        width: 100vw;
-        height: 100vh;
-        background-color: #f0f0f0;
-        border: 0;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-    <script
-      type="module"
-      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
-    ></script>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="&lt;model-viewer&gt; template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="text/css" href="./styles.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- <model-viewer> HTML element -->
     <model-viewer
       src="https://pub-71060078332047d1808d8e6cb2265240.r2.dev/konark_sphere_cutout.glb"
       ar
@@ -40,12 +23,14 @@
       </div>
       <button slot="ar-button" id="ar-button">View in your space</button>
       <div id="ar-prompt">
-        <img src="https://modelviewer.dev/shared-assets/icons/hand.png" />
+        <img src="ar_hand_prompt.png" />
       </div>
     </model-viewer>
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
   </body>
 </html>
-
-<!-- 
-      src="https://8de227e465b58ee1c3c91b0e25a7bf8f.r2.cloudflarestorage.com/models-bucket/konark_sphere_cutout.glb"
--->
