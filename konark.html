@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>&lt;model-viewer&gt; template</title>
+    <title>Konark Sun Temple</title>
     <meta charset="utf-8" />
     <meta name="description" content="&lt;model-viewer&gt; template" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,17 +10,17 @@
   <body>
     <!-- <model-viewer> HTML element -->
     <model-viewer
-      src="https://pub-71060078332047d1808d8e6cb2265240.r2.dev/konark_sphere_cutout.glb"
-      ios-src="https://pub-71060078332047d1808d8e6cb2265240.r2.dev/konark_sphere_cutout.usdz"
       ar
-      ar-modes="webxr scene-viewer quick-look"
       camera-controls
+      ar-modes="webxr scene-viewer quick-look"
+      loading="eager"
       tone-mapping="neutral"
-      poster="poster.webp"
       shadow-intensity="1"
       camera-orbit="62.37deg 72.63deg 3.097m"
       field-of-view="30deg"
-      loading="eager"
+      src="https://pub-71060078332047d1808d8e6cb2265240.r2.dev/konark.glb"
+      ios-src="https://pub-71060078332047d1808d8e6cb2265240.r2.dev/konark.usdz"
+      poster="https://pub-71060078332047d1808d8e6cb2265240.r2.dev/konark.webp"
     >
       <div class="progress-bar" slot="progress-bar">
         <div class="update-bar"></div>
@@ -31,7 +31,7 @@
       </div>
     </model-viewer>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
     <script
       type="module"
